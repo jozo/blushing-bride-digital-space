@@ -18,12 +18,12 @@ const Gallery = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-pink-50 to-rose-50" id="gallery">
+    <section className="py-20 bg-gradient-to-br from-cream-100 to-cream-200" id="gallery">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-4">Our Journey</h2>
-          <div className="h-px w-24 bg-rose-300 mx-auto mb-6"></div>
-          <p className="text-gray-600">A glimpse into our beautiful memories together</p>
+          <h2 className="text-4xl md:text-5xl font-serif text-cream-800 mb-4">Our Journey</h2>
+          <div className="h-px w-24 bg-cream-400 mx-auto mb-6"></div>
+          <p className="text-cream-700">A glimpse into our beautiful memories together</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -43,7 +43,7 @@ const Gallery = () => {
         </div>
         
         <div className="text-center mt-12">
-          <p className="text-gray-600 text-lg">
+          <p className="text-cream-700 text-lg">
             More photos coming soon! Follow our journey on social media.
           </p>
         </div>

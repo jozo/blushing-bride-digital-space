@@ -42,15 +42,15 @@ const RSVP = () => {
     <section className="py-20 bg-white" id="rsvp">
       <div className="max-w-2xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-4">RSVP</h2>
-          <div className="h-px w-24 bg-rose-300 mx-auto mb-6"></div>
-          <p className="text-gray-600">Please respond by May 1st, 2024</p>
+          <h2 className="text-4xl md:text-5xl font-serif text-cream-800 mb-4">RSVP</h2>
+          <div className="h-px w-24 bg-cream-400 mx-auto mb-6"></div>
+          <p className="text-cream-700">Please respond by May 1st, 2024</p>
         </div>
         
-        <form onSubmit={handleSubmit} className="space-y-6 bg-gradient-to-br from-rose-50 to-pink-50 p-8 rounded-lg shadow-lg">
+        <form onSubmit={handleSubmit} className="space-y-6 bg-gradient-to-br from-cream-50 to-cream-100 p-8 rounded-lg shadow-lg">
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <Label htmlFor="name" className="text-gray-700 font-medium">Full Name *</Label>
+              <Label htmlFor="name" className="text-cream-800 font-medium">Full Name *</Label>
               <Input
                 id="name"
                 value={formData.name}
@@ -61,7 +61,7 @@ const RSVP = () => {
             </div>
             
             <div>
-              <Label htmlFor="email" className="text-gray-700 font-medium">Email *</Label>
+              <Label htmlFor="email" className="text-cream-800 font-medium">Email *</Label>
               <Input
                 id="email"
                 type="email"
@@ -75,7 +75,7 @@ const RSVP = () => {
           
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <Label className="text-gray-700 font-medium">Will you attend? *</Label>
+              <Label className="text-cream-800 font-medium">Will you attend? *</Label>
               <Select value={formData.attendance} onValueChange={(value) => handleChange('attendance', value)}>
                 <SelectTrigger className="mt-1">
                   <SelectValue placeholder="Select response" />
@@ -88,7 +88,7 @@ const RSVP = () => {
             </div>
             
             <div>
-              <Label className="text-gray-700 font-medium">Number of Guests</Label>
+              <Label className="text-cream-800 font-medium">Number of Guests</Label>
               <Select value={formData.guests} onValueChange={(value) => handleChange('guests', value)}>
                 <SelectTrigger className="mt-1">
                   <SelectValue />
@@ -104,7 +104,7 @@ const RSVP = () => {
           </div>
           
           <div>
-            <Label htmlFor="dietary" className="text-gray-700 font-medium">Dietary Restrictions</Label>
+            <Label htmlFor="dietary" className="text-cream-800 font-medium">Dietary Restrictions</Label>
             <Input
               id="dietary"
               value={formData.dietaryRestrictions}
@@ -115,7 +115,7 @@ const RSVP = () => {
           </div>
           
           <div>
-            <Label htmlFor="message" className="text-gray-700 font-medium">Message for the Couple</Label>
+            <Label htmlFor="message" className="text-cream-800 font-medium">Message for the Couple</Label>
             <Textarea
               id="message"
               value={formData.message}
@@ -127,7 +127,7 @@ const RSVP = () => {
           
           <Button 
             type="submit" 
-            className="w-full bg-rose-400 hover:bg-rose-500 text-white py-3 rounded-full font-medium transition-all duration-300 hover:scale-105"
+            className="w-full bg-cream-500 hover:bg-cream-600 text-white py-3 rounded-full font-medium transition-all duration-300 hover:scale-105"
           >
             Send RSVP
           </Button>

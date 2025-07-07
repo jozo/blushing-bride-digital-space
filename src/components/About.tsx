@@ -6,15 +6,15 @@ const About = () => {
     <section className="py-20 bg-white" id="about">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-4">Our Love Story</h2>
-          <div className="h-px w-24 bg-rose-300 mx-auto"></div>
+          <h2 className="text-4xl md:text-5xl font-serif text-cream-800 mb-4">Our Love Story</h2>
+          <div className="h-px w-24 bg-cream-400 mx-auto"></div>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-serif text-gray-800 mb-3">How We Met</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="text-2xl font-serif text-cream-800 mb-3">How We Met</h3>
+              <p className="text-cream-700 leading-relaxed">
                 It was a rainy Tuesday morning at the local coffee shop when our eyes first met. 
                 Sarah was reading her favorite novel, and James couldn't help but notice the 
                 smile on her face. A spilled latte later, and the rest is history.
@@ -22,8 +22,8 @@ const About = () => {
             </div>
             
             <div>
-              <h3 className="text-2xl font-serif text-gray-800 mb-3">The Proposal</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="text-2xl font-serif text-cream-800 mb-3">The Proposal</h3>
+              <p className="text-cream-700 leading-relaxed">
                 Three years later, James surprised Sarah with a sunset picnic at the same park 
                 where they had their first official date. As the golden hour painted the sky, 
                 he got down on one knee and asked the question that changed everything.
@@ -39,7 +39,7 @@ const About = () => {
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
-            <div className="absolute -bottom-4 -right-4 bg-rose-100 p-4 rounded-full shadow-lg">
+            <div className="absolute -bottom-4 -right-4 bg-cream-100 p-4 rounded-full shadow-lg">
               <span className="text-2xl">💕</span>
             </div>
           </div>

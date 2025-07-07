@@ -26,8 +26,8 @@ const Navigation = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
-            <Heart className="text-rose-400 h-6 w-6" />
-            <span className="font-serif text-xl text-gray-800">S & J</span>
+            <Heart className="text-cream-500 h-6 w-6" />
+            <span className="font-serif text-xl text-cream-800">S & J</span>
           </div>
           
           {/* Desktop Navigation */}
@@ -36,7 +36,7 @@ const Navigation = () => {
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className="text-gray-600 hover:text-rose-400 transition-colors duration-200 font-medium"
+                className="text-cream-700 hover:text-cream-500 transition-colors duration-200 font-medium"
               >
                 {item.label}
               </button>
@@ -60,7 +60,7 @@ const Navigation = () => {
                 <button
                   key={item.label}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left px-4 py-2 text-gray-600 hover:text-rose-400 hover:bg-rose-50 transition-colors duration-200"
+                  className="block w-full text-left px-4 py-2 text-cream-700 hover:text-cream-500 hover:bg-cream-50 transition-colors duration-200"
                 >
                   {item.label}
                 </button>
