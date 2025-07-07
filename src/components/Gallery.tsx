@@ -21,9 +21,9 @@ const Gallery = () => {
     <section className="py-20 bg-gradient-to-br from-cream-100 to-cream-200" id="gallery">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif text-cream-800 mb-4">Our Journey</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-cream-800 mb-4">Galéria - naša cesta</h2>
           <div className="h-px w-24 bg-cream-400 mx-auto mb-6"></div>
-          <p className="text-cream-700">A glimpse into our beautiful memories together</p>
+          <p className="text-cream-700">Náhľad do našich spoločných spomienok...</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

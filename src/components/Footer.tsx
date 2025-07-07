@@ -8,24 +8,24 @@ const Footer = () => {
       <div className="max-w-4xl mx-auto px-4 text-center">
         <div className="mb-8">
           <Heart className="mx-auto mb-4 text-cream-300 h-8 w-8" />
-          <h3 className="text-2xl font-serif mb-2">Sarah & James</h3>
-          <p className="text-cream-200">June 15, 2024</p>
+          <h3 className="text-2xl font-serif mb-2">Sára & Jozef</h3>
+          <p className="text-cream-200">25. október 2025</p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div className="flex items-center justify-center space-x-2">
             <Mail className="h-4 w-4 text-cream-300" />
-            <span className="text-cream-200">wedding@sarahandjames.com</span>
+            <span className="text-cream-200">hi@jozo.io</span>
           </div>
           <div className="flex items-center justify-center space-x-2">
             <Phone className="h-4 w-4 text-cream-300" />
-            <span className="text-cream-200">(555) 123-4567</span>
+            <span className="text-cream-200">+421 908 659 451</span>
           </div>
         </div>
         
         <div className="border-t border-cream-600 pt-8">
           <p className="text-cream-300 text-sm">
-            We can't wait to celebrate with you! ♥
+            Tešíme sa na oslavu s vami! ♥
           </p>
         </div>
       </div>

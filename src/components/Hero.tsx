@@ -3,6 +3,13 @@ import React from 'react';
 import { Heart } from 'lucide-react';
 
 const Hero = () => {
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-cream-50 to-cream-100 relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center opacity-10"></div>
@@ -11,17 +18,19 @@ const Hero = () => {
         <div className="animate-fade-in">
           <Heart className="mx-auto mb-6 text-cream-500 h-12 w-12 animate-pulse" />
           <h1 className="text-6xl md:text-8xl font-serif text-cream-800 mb-4 tracking-wide">
-            Sarah & James
+            Sára & Jozef
           </h1>
           <div className="h-px w-32 bg-cream-400 mx-auto mb-6"></div>
           <p className="text-xl md:text-2xl text-cream-700 mb-8 font-light">
-            are getting married
+            sa budú brať
           </p>
           <p className="text-lg md:text-xl text-cream-600 mb-12">
-            June 15, 2024 • Sunset Garden Estate
+            25. október 2025 • Oravská Jasenica
           </p>
-          <button className="bg-cream-500 hover:bg-cream-600 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg">
-            View Our Story
+          <button className="bg-cream-500 hover:bg-cream-600 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg"
+                  onClick={() => scrollToSection('#about')}
+          >
+            Prečítaj si náš príbeh
           </button>
         </div>
       </div>

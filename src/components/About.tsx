@@ -6,14 +6,14 @@ const About = () => {
     <section className="py-20 bg-white" id="about">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif text-cream-800 mb-4">Our Love Story</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-cream-800 mb-4">Náš príbeh</h2>
           <div className="h-px w-24 bg-cream-400 mx-auto"></div>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-serif text-cream-800 mb-3">How We Met</h3>
+              <h3 className="text-2xl font-serif text-cream-800 mb-3">Ako sme sa spoznali</h3>
               <p className="text-cream-700 leading-relaxed">
                 It was a rainy Tuesday morning at the local coffee shop when our eyes first met. 
                 Sarah was reading her favorite novel, and James couldn't help but notice the 
@@ -22,7 +22,7 @@ const About = () => {
             </div>
             
             <div>
-              <h3 className="text-2xl font-serif text-cream-800 mb-3">The Proposal</h3>
+              <h3 className="text-2xl font-serif text-cream-800 mb-3">Zásnuby</h3>
               <p className="text-cream-700 leading-relaxed">
                 Three years later, James surprised Sarah with a sunset picnic at the same park 
                 where they had their first official date. As the golden hour painted the sky, 
