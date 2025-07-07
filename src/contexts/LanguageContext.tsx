@@ -28,9 +28,9 @@ const translations = {
     // About
     'about.title': 'Náš príbeh',
     'about.meeting.title': 'Ako sme sa spoznali',
-    'about.meeting.text': 'Stretli sme sa v jeden krásny deň, keď naše oči sa prvýkrát stretli. Sára číta svoju obľúbenú knihu a Jozef si nemohol nevšimnúť úsmev na jej tvári. Po rozliatej káve sa začal náš príbeh.',
+    'about.meeting.text': 'Prvýkrát sa zahliadli na jednej kresťanskej akcii. Najskôr len zdiaľky, postupne však na seba narážali viac a viac na miestach, kde to ani nečakali. Spoločný rozhovor v aute pred Hlavnou stanicou prerástol do pozvania na prvé rande. Už o pár týždňov na to sa držali za ruky a začali spoločné dobrodružstvo.',
     'about.engagement.title': 'Zásnuby',
-    'about.engagement.text': 'Po troch rokoch Jozef prekvapal Sáru romantickým pikniková o západe slnka v tom istom parku, kde mali svoj prvý oficiálny rande. Keď zlatá hodina maľovala oblohu, kľakol si na koleno a položil otázku, ktorá všetko zmenila.',
+    'about.engagement.text': 'Po roku Jozef vedel, že Sára je tá pravá. Púť do Ríma počas jubilejného roku obohatil o prekvapenie navyše. V Bazilike sv. Sebastiána pokľakol a požiadal Sáru o ruku.',
     
     // Wedding Details
     'details.title': 'Informácie o svadbe',
@@ -41,7 +41,7 @@ const translations = {
     'details.reception.location': 'Kultúrny dom Oravská Jasenica',
     'details.reception.address': 'Oravská Jasenica 142, 029 64 Oravská Jasenica',
     'details.dresscode.title': 'Dress Code',
-    'details.dresscode.text': 'Príďte v elegantnom oblečení. Pre dámy odporúčame šaty a pre pánov oblek.',
+    'details.dresscode.text': 'Stačí prísť v elegantnom oblečení. Pre dámy odporúčame šaty a pre pánov oblek.',
     
     // Gallery
     'gallery.title': 'Galéria - naša cesta',
@@ -50,7 +50,7 @@ const translations = {
     
     // RSVP
     'rsvp.title': 'RSVP',
-    'rsvp.deadline': 'Prosím odpovedzte do 1. mája 2024',
+    'rsvp.deadline': 'Prosím odpovedzte do 1. septembra 2025',
     'rsvp.name': 'Celé meno',
     'rsvp.email': 'Email',
     'rsvp.attendance': 'Zúčastníte sa?',
@@ -87,9 +87,9 @@ const translations = {
     // About
     'about.title': 'Our Story',
     'about.meeting.title': 'How we met',
-    'about.meeting.text': 'It was a beautiful day when our eyes first met. Sarah was reading her favorite book, and Jozef couldn\'t help but notice the smile on her face. A spilled coffee later, and the rest is history.',
+    'about.meeting.text': 'They first caught sight of each other at a Christian event. At first, only from a distance, but gradually they kept running into each other more and more in places they didn’t expect. A shared conversation in a car in front of the Main Station turned into an invitation to a first date. Just a few weeks later, they were holding hands and beginning a shared adventure.',
     'about.engagement.title': 'The Engagement',
-    'about.engagement.text': 'Three years later, Jozef surprised Sarah with a sunset picnic at the same park where they had their first official date. As the golden hour painted the sky, he got down on one knee and asked the question that changed everything.',
+    'about.engagement.text': 'After a year, Jozef knew that Sára was the one. He added an extra surprise to their pilgrimage to Rome during the Jubilee Year. In the Basilica of St. Sebastian, he knelt down and asked Sára to marry him.',
     
     // Wedding Details
     'details.title': 'Wedding Details',

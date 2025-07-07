@@ -7,17 +7,41 @@ const Gallery = () => {
 
   const photos = [
     {
-      src: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      alt: "Beautiful mountain landscape"
+      src: "/images/20240501T100804.webp",
+      alt: ""
     },
     {
-      src: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      alt: "Elegant interior"
+      src: "/images/20240705T133430.webp",
+      alt: ""
     },
     {
-      src: "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      alt: "Nature scene with deer"
-    }
+      src: "/images/Fotografia 24-08-18 11-46-33 5974.jpg",
+      alt: ""
+    },
+    {
+      src: "/images/Fotografia 24-08-29 09-25-34 6215.jpg",
+      alt: ""
+    },
+    {
+      src: "/images/Fotografia 24-12-17 18-22-09 8120.jpg",
+      alt: ""
+    },
+    {
+      src: "/images/Fotografia 24-12-22 16-01-41 8307.jpg",
+      alt: ""
+    },
+    {
+      src: "/images/Fotografia 25-04-23 19-04-07 1372.jpg",
+      alt: ""
+    },
+    {
+      src: "/images/Fotografia 25-05-03 22-34-29 1665.jpg",
+      alt: ""
+    },
+    {
+      src: "/images/IMG_2386.jpg",
+      alt: ""
+    },
   ];
 
   return (
@@ -43,12 +67,6 @@ const Gallery = () => {
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
             </div>
           ))}
-        </div>
-        
-        <div className="text-center mt-12">
-          <p className="text-cream-700 text-lg">
-            {t('gallery.more')}
-          </p>
         </div>
       </div>
     </section>

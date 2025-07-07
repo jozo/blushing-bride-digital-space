@@ -26,7 +26,10 @@ const WeddingDetails = () => {
                 </div>
                 <div className="flex items-center justify-center space-x-2">
                   <MapPin className="h-4 w-4" />
-                  <span>{t('details.ceremony.location')}</span>
+                  <a href="https://maps.app.goo.gl/hpyZpCiGXbKgz11Z9" target="_blank"
+                    className="underline hover:no-underline">
+                    {t('details.ceremony.location')}
+                  </a>
                 </div>
                 <p className="text-sm">{t('details.ceremony.address')}</p>
               </div>
@@ -44,7 +47,10 @@ const WeddingDetails = () => {
                 </div>
                 <div className="flex items-center justify-center space-x-2">
                   <MapPin className="h-4 w-4" />
-                  <span>{t('details.reception.location')}</span>
+                  <a href="https://maps.app.goo.gl/fVjcyn4FrmCJsdv98" target="_blank"
+                    className="underline hover:no-underline">
+                    {t('details.reception.location')}
+                  </a>
                 </div>
                 <p className="text-sm">{t('details.reception.address')}</p>
               </div>
