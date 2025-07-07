@@ -1,32 +1,31 @@
 
 import React from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const About = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-20 bg-white" id="about">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif text-cream-800 mb-4">Náš príbeh</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-cream-800 mb-4">{t('about.title')}</h2>
           <div className="h-px w-24 bg-cream-400 mx-auto"></div>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-serif text-cream-800 mb-3">Ako sme sa spoznali</h3>
+              <h3 className="text-2xl font-serif text-cream-800 mb-3">{t('about.meeting.title')}</h3>
               <p className="text-cream-700 leading-relaxed">
-                It was a rainy Tuesday morning at the local coffee shop when our eyes first met. 
-                Sarah was reading her favorite novel, and James couldn't help but notice the 
-                smile on her face. A spilled latte later, and the rest is history.
+                {t('about.meeting.text')}
               </p>
             </div>
             
             <div>
-              <h3 className="text-2xl font-serif text-cream-800 mb-3">Zásnuby</h3>
+              <h3 className="text-2xl font-serif text-cream-800 mb-3">{t('about.engagement.title')}</h3>
               <p className="text-cream-700 leading-relaxed">
-                Three years later, James surprised Sarah with a sunset picnic at the same park 
-                where they had their first official date. As the golden hour painted the sky, 
-                he got down on one knee and asked the question that changed everything.
+                {t('about.engagement.text')}
               </p>
             </div>
           </div>

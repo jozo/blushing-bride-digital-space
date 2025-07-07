@@ -1,7 +1,10 @@
 
 import React from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Gallery = () => {
+  const { t } = useLanguage();
+
   const photos = [
     {
       src: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
@@ -21,9 +24,9 @@ const Gallery = () => {
     <section className="py-20 bg-gradient-to-br from-cream-100 to-cream-200" id="gallery">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif text-cream-800 mb-4">Galéria - naša cesta</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-cream-800 mb-4">{t('gallery.title')}</h2>
           <div className="h-px w-24 bg-cream-400 mx-auto mb-6"></div>
-          <p className="text-cream-700">Náhľad do našich spoločných spomienok...</p>
+          <p className="text-cream-700">{t('gallery.subtitle')}</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -44,7 +47,7 @@ const Gallery = () => {
         
         <div className="text-center mt-12">
           <p className="text-cream-700 text-lg">
-            More photos coming soon! Follow our journey on social media.
+            {t('gallery.more')}
           </p>
         </div>
       </div>

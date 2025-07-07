@@ -1,8 +1,11 @@
 
 import React from 'react';
 import { Heart } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
@@ -22,15 +25,15 @@ const Hero = () => {
           </h1>
           <div className="h-px w-32 bg-cream-400 mx-auto mb-6"></div>
           <p className="text-xl md:text-2xl text-cream-700 mb-8 font-light">
-            sa budú brať
+            {t('hero.subtitle')}
           </p>
           <p className="text-lg md:text-xl text-cream-600 mb-12">
-            25. október 2025 • Oravská Jasenica
+            {t('hero.date')}
           </p>
           <button className="bg-cream-500 hover:bg-cream-600 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg"
                   onClick={() => scrollToSection('#about')}
           >
-            Prečítaj si náš príbeh
+            {t('hero.button')}
           </button>
         </div>
       </div>

@@ -1,8 +1,11 @@
 
 import React from 'react';
 import { Heart, Mail, Phone } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-cream-800 text-cream-100 py-12">
       <div className="max-w-4xl mx-auto px-4 text-center">
@@ -25,7 +28,7 @@ const Footer = () => {
         
         <div className="border-t border-cream-600 pt-8">
           <p className="text-cream-300 text-sm">
-            Tešíme sa na oslavu s vami! ♥
+            {t('footer.excitement')}
           </p>
         </div>
       </div>

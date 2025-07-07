@@ -1,16 +1,19 @@
 
 import React, { useState } from 'react';
 import { Heart, Menu, X } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navItems = [
-    { label: 'Domov', href: '#home' },
-    { label: 'Náš príbeh', href: '#about' },
-    { label: 'Informácie', href: '#info' },
-    { label: 'Galéria', href: '#gallery' },
-    { label: 'RSVP', href: '#rsvp' }
+    { label: t('nav.home'), href: '#home' },
+    { label: t('nav.story'), href: '#about' },
+    { label: t('nav.info'), href: '#info' },
+    { label: t('nav.gallery'), href: '#gallery' },
+    { label: t('nav.rsvp'), href: '#rsvp' }
   ];
 
   const scrollToSection = (href: string) => {
@@ -41,6 +44,7 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
+            <LanguageSwitcher />
           </div>
           
           {/* Mobile Menu Button */}
@@ -65,6 +69,9 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
+              <div className="px-4 py-2">
+                <LanguageSwitcher />
+              </div>
             </div>
           </div>
         )}
