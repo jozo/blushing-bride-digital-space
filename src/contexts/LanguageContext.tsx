@@ -21,8 +21,8 @@ const translations = {
     'nav.rsvp': 'RSVP',
     
     // Hero
-    'hero.subtitle': 'sa budú brať',
-    'hero.date': '25. október 2025 • Oravská Jasenica',
+    'hero.subtitle': 'sa budú brať!',
+    'hero.date': '24. október 2025 • Oravská Jasenica',
     'hero.button': 'Prečítaj si náš príbeh',
     
     // About
@@ -68,7 +68,8 @@ const translations = {
     'rsvp.submit': 'Odoslať RSVP',
     
     // Footer
-    'footer.excitement': 'Tešíme sa na oslavu s vami! ♥'
+    'footer.excitement': 'Tešíme sa na oslavu s vami! ♥',
+    'footer.date': '24. október 2025'
   },
   en: {
     // Navigation
@@ -80,7 +81,7 @@ const translations = {
     
     // Hero
     'hero.subtitle': 'are getting married',
-    'hero.date': 'October 25, 2025 • Oravská Jasenica',
+    'hero.date': 'October 24, 2025 • Oravská Jasenica',
     'hero.button': 'Read our story',
     
     // About
@@ -126,7 +127,8 @@ const translations = {
     'rsvp.submit': 'Send RSVP',
     
     // Footer
-    'footer.excitement': 'We can\'t wait to celebrate with you! ♥'
+    'footer.excitement': 'We can\'t wait to celebrate with you! ♥',
+    'footer.date': 'October 24, 2025'
   }
 };
 

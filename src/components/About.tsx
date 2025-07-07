@@ -33,8 +33,8 @@ const About = () => {
           <div className="relative">
             <div className="aspect-square rounded-full overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Beautiful scenery representing our journey"
+                src="/images/our-photo-1.webp"
+                alt="Me and Sara together"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>

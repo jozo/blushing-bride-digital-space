@@ -12,7 +12,8 @@ const Footer = () => {
         <div className="mb-8">
           <Heart className="mx-auto mb-4 text-cream-300 h-8 w-8" />
           <h3 className="text-2xl font-serif mb-2">Sára & Jozef</h3>
-          <p className="text-cream-200">25. október 2025</p>
+          <p className="text-cream-200">{t('footer.date')}</p>
+
         </div>
         
         <div className="grid md:grid-cols-2 gap-8 mb-8">
