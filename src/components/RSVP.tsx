@@ -378,4 +378,4 @@ const RSVP = () => {
   );
 };
 
-export default Sentry.withSentryConfig(RSVP);
+export default RSVP;
