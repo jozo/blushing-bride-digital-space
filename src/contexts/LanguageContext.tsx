@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'sk' | 'en';
@@ -108,7 +109,7 @@ const translations = {
     
     // RSVP
     'rsvp.title': 'RSVP',
-    'rsvp.deadline': 'Please respond by September 1st, 2025',
+    'rsvp.deadline': 'Please respond by May 1st, 2024',
     'rsvp.name': 'Full Name',
     'rsvp.email': 'Email',
     'rsvp.attendance': 'Will you attend?',
