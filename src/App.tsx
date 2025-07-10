@@ -38,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default Sentry.withSentryConfig(App);
