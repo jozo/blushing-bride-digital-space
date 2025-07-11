@@ -63,7 +63,7 @@ const translations = {
     'rsvp.dietary': 'Diétne obmedzenia',
     'rsvp.dietary.placeholder': 'Máte nejaké alergie alebo diétne potreby?',
     'rsvp.message': 'Odkaz pre pár',
-    'rsvp.message.placeholder': 'Podeľte sa o svoje nadšenie alebo priania!',
+    'rsvp.message.placeholder': 'Je niečo, čo by ste nám chceli povedať?',
     'rsvp.submit': 'Odoslať RSVP',
     
     // RSVP Form - Additional translations
@@ -86,7 +86,8 @@ const translations = {
     'rsvp.select.type': 'Vyberte typ',
     'rsvp.accommodation.title': 'Typ ubytovania',
     'rsvp.accommodation.description': 'Existujú dve možnosti ubytovania. Pozrite si fotky',
-    'rsvp.accommodation.dormitory': 'a',
+    'rsvp.accommodation.dormitory': 'internátu',
+    'rsvp.accommodation.and': 'a',
     'rsvp.accommodation.hotel': 'hotela',
     'rsvp.accommodation.select': 'Vyberte typ ubytovania',
     'rsvp.accommodation.no': 'Bez ubytovania',
@@ -160,7 +161,7 @@ const translations = {
     'rsvp.dietary': 'Dietary Restrictions',
     'rsvp.dietary.placeholder': 'Any allergies or dietary needs?',
     'rsvp.message': 'Message for the Couple',
-    'rsvp.message.placeholder': 'Share your excitement or well wishes!',
+    'rsvp.message.placeholder': 'Is there anything you would like to share with us?',
     'rsvp.submit': 'Send RSVP',
     
     // RSVP Form - Additional translations
@@ -184,6 +185,7 @@ const translations = {
     'rsvp.accommodation.title': 'Accommodation Type',
     'rsvp.accommodation.description': 'There are two options for accommodation. Check photos of the',
     'rsvp.accommodation.dormitory': 'dormitory',
+    'rsvp.accommodation.and': 'and',
     'rsvp.accommodation.hotel': 'hotel',
     'rsvp.accommodation.select': 'Select accommodation type',
     'rsvp.accommodation.no': 'No accommodation',

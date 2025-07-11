@@ -132,8 +132,8 @@ const RSVP = () => {
       await submitToNextcloud(data);
 
       toast({
-        title: "RSVP Received!",
-        description: "Thank you for your response. We can't wait to celebrate with you!",
+        title: t('rsvp.success.title'),
+        description: t('rsvp.success.message'),
       });
 
       reset();
@@ -141,8 +141,8 @@ const RSVP = () => {
       console.error('Error submitting RSVP:', error);
       // Sentry.captureException(error);
       toast({
-        title: "Error",
-        description: "There was a problem submitting your RSVP. Please try again.",
+        title: t('rsvp.error.title'),
+        description: t('rsvp.error.message'),
         variant: "destructive",
       });
     } finally {
@@ -163,7 +163,7 @@ const RSVP = () => {
           {/* Person Details */}
           <div className="space-y-4">
             <div className="flex items-center justify-between">
-              <Label className="text-cream-800 font-medium text-lg">Guest Details</Label>
+              <Label className="text-cream-800 font-medium text-lg">{t('rsvp.guest.details')}</Label>
               <Button
                 type="button"
                 onClick={addPerson}
@@ -171,14 +171,14 @@ const RSVP = () => {
                 size="sm"
               >
                 <Plus className="w-4 h-4 mr-1" />
-                Add Person
+                {t('rsvp.add.person')}
               </Button>
             </div>
 
             {fields.map((field, index) => (
               <div key={field.id} className="p-4 border border-cream-200 rounded-lg space-y-4">
                 <div className="flex items-center justify-between">
-                  <h4 className="font-medium text-cream-800">Person {index + 1}</h4>
+                  <h4 className="font-medium text-cream-800">{t('rsvp.person')} {index + 1}</h4>
                   {fields.length > 1 && (
                     <Button
                       type="button"
@@ -194,11 +194,11 @@ const RSVP = () => {
 
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <Label className="text-cream-700">Name *</Label>
+                    <Label className="text-cream-700">{t('rsvp.person.name')} *</Label>
                     <Input
-                      {...register(`persons.${index}.name`, { required: 'Name is required' })}
+                      {...register(`persons.${index}.name`, { required: t('rsvp.name.required') })}
                       className="mt-1"
-                      placeholder="First and Last Name"
+                      placeholder={t('rsvp.person.name.placeholder')}
                     />
                   </div>
 
@@ -208,7 +208,7 @@ const RSVP = () => {
                       required
                     >
                       <SelectTrigger className="mt-1">
-                        <SelectValue placeholder="Select response" />
+                        <SelectValue placeholder={t('rsvp.select.response')} />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="yes">{t('rsvp.attendance.yes')}</SelectItem>
@@ -221,23 +221,23 @@ const RSVP = () => {
                 { watchPersons[index].attendance === 'yes' && (
                   <>
                     <div>
-                      <Label className="text-cream-700">Chair Type</Label>
+                      <Label className="text-cream-700">{t('rsvp.person.chair')}</Label>
                       <Select onValueChange={(value) => setValue(`persons.${index}.chair`, value as 'adult' | 'high' | 'none')}>
                         <SelectTrigger className="mt-1">
-                          <SelectValue placeholder="Select chair" />
+                          <SelectValue placeholder={t('rsvp.select.chair')} />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="adult">Adult Chair</SelectItem>
-                          <SelectItem value="high">High Chair</SelectItem>
-                          <SelectItem value="none">No Chair</SelectItem>
+                          <SelectItem value="adult">{t('rsvp.person.chair.adult')}</SelectItem>
+                          <SelectItem value="high">{t('rsvp.person.chair.high')}</SelectItem>
+                          <SelectItem value="none">{t('rsvp.person.chair.none')}</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
                     <div>
-                      <Label className="text-cream-700">Dietary Restrictions</Label>
+                      <Label className="text-cream-700">{t('rsvp.person.dietary')}</Label>
                       <Input
                         {...register(`persons.${index}.dietaryRestrictions`)}
-                        placeholder="Any allergies or dietary needs?"
+                        placeholder={t('rsvp.person.dietary.placeholder')}
                         className="mt-1"
                       />
                     </div>
@@ -251,49 +251,48 @@ const RSVP = () => {
           <div className="space-y-4">
             <div className="space-y-4 p-4 border border-cream-200 rounded-lg">
               <div>
-                <Label className="text-cream-700">Accommodation Type</Label>
+                <Label className="text-cream-700">{t('rsvp.accommodation.title')}</Label>
                 <div className="text-cream-700">
-                  There are two options for accommodation. Check photos of
-                  the <a className="text-cream-500 underline" href="#">
-                  dormitory
-                  </a> and <a className="text-cream-500 underline" href="#">hotel</a>.
+                  {t('rsvp.accommodation.description')} <a className="text-cream-500 underline" href="#">
+                   {t('rsvp.accommodation.dormitory')}
+                  </a>  {t('rsvp.accommodation.and')} <a className="text-cream-500 underline" href="#">{t('rsvp.accommodation.hotel')}</a>.
                 </div>
                 <Select onValueChange={(value) => setValue('accommodationType', value)}>
                   <SelectTrigger className="mt-1">
-                    <SelectValue placeholder="Select accommodation type" />
+                    <SelectValue placeholder={t('rsvp.accommodation.select')} />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="no">No accommodation</SelectItem>
-                    <SelectItem value="cheap">Dormitory room (20€/person/night)</SelectItem>
-                    <SelectItem value="expensive">Hotel room (40€/person/night)</SelectItem>
+                    <SelectItem value="no">{t('rsvp.accommodation.no')}</SelectItem>
+                    <SelectItem value="cheap">{t('rsvp.accommodation.cheap')}</SelectItem>
+                    <SelectItem value="expensive">{t('rsvp.accommodation.expensive')}</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
 
               { ( watchAccommodationType !== 'no' ) && (
                 <div>
-                  <Label className="text-cream-700">Days</Label>
+                  <Label className="text-cream-700">{t('rsvp.accommodation.days')}</Label>
                   <div className="mt-2 space-x-3 flex">
                     <div className="flex items-center space-x-1">
                       <Checkbox
                         id="thursday"
                         onCheckedChange={(checked) => setValue('accommodationDays.thursday', !!checked)}
                       />
-                      <Label htmlFor="thursday" className="text-cream-700">Thursday</Label>
+                      <Label htmlFor="thursday" className="text-cream-700">{t('rsvp.accommodation.thursday')}</Label>
                     </div>
                     <div className="flex items-center space-x-1">
                       <Checkbox
                         id="friday"
                         onCheckedChange={(checked) => setValue('accommodationDays.friday', !!checked)}
                       />
-                      <Label htmlFor="friday" className="text-cream-700">Friday</Label>
+                      <Label htmlFor="friday" className="text-cream-700">{t('rsvp.accommodation.friday')}</Label>
                     </div>
                     <div className="flex items-center space-x-1">
                       <Checkbox
                         id="saturday"
                         onCheckedChange={(checked) => setValue('accommodationDays.saturday', !!checked)}
                       />
-                      <Label htmlFor="saturday" className="text-cream-700">Saturday</Label>
+                      <Label htmlFor="saturday" className="text-cream-700">{t('rsvp.accommodation.saturday')}</Label>
                     </div>
                   </div>
                 </div>
@@ -308,7 +307,7 @@ const RSVP = () => {
               id="weddingTaxi"
               onCheckedChange={(checked) => setValue('weddingTaxi', !!checked)}
             />
-            <Label htmlFor="weddingTaxi" className="text-cream-800 font-medium">I want to use the wedding taxi (only from the reception back to your accommodation)</Label>
+            <Label htmlFor="weddingTaxi" className="text-cream-800 font-medium">{t('rsvp.wedding.taxi')}</Label>
           </div>
 
           {/* Message */}
@@ -327,7 +326,7 @@ const RSVP = () => {
             disabled={submitting}
             className="w-full bg-cream-500 hover:bg-cream-600 text-white py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 disabled:opacity-50"
           >
-            {submitting ? 'Submitting...' : t('rsvp.submit')}
+            {submitting ? t('rsvp.submitting') : t('rsvp.submit')}
           </Button>
         </form>
       </div>
