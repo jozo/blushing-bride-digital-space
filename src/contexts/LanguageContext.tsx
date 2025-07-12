@@ -77,7 +77,7 @@ const translations = {
     'rsvp.person.type.child': 'Dieťa',
     'rsvp.person.chair': 'Typ stoličky',
     'rsvp.person.chair.adult': 'Dospelácka stolička',
-    'rsvp.person.chair.high': 'Vysoká stolička',
+    'rsvp.person.chair.high': 'Detská stolička',
     'rsvp.person.chair.none': 'Žiadna stolička',
     'rsvp.person.dietary': 'Diétne obmedzenia',
     'rsvp.person.dietary.placeholder': 'Nejaké alergie alebo diétne potreby?',
