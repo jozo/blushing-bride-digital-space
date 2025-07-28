@@ -27,9 +27,9 @@ const translations = {
     // About
     'about.title': 'Náš príbeh',
     'about.meeting.title': 'Ako sme sa spoznali',
-    'about.meeting.text': 'Prvýkrát sa zahliadli na jednej kresťanskej akcii. Najskôr len zdiaľky, postupne však na seba narážali viac a viac na miestach, kde to ani nečakali. Spoločný rozhovor v aute pred Hlavnou stanicou prerástol do pozvania na prvé rande. Už o pár týždňov na to sa držali za ruky a začali spoločné dobrodružstvo.',
+    'about.meeting.text': 'Prvýkrát sme sa zahliadli na jednej kresťanskej akcii. Najskôr len zdiaľky, postupne sme však na seba narážali viac a viac na miestach, kde sme to ani nečakali. Spoločný rozhovor v aute pred Hlavnou stanicou prerástol do pozvania na prvé rande. Už o pár týždňov na to sme sa držali za ruky a začali naše spoločné dobrodružstvo.',
     'about.engagement.title': 'Zásnuby',
-    'about.engagement.text': 'Po roku Jozef vedel, že Sára je tá pravá. Púť do Ríma počas jubilejného roku obohatil o prekvapenie navyše. V Bazilike sv. Sebastiána pokľakol a požiadal Sáru o ruku.',
+    'about.engagement.text': 'O rok neskôr som vedel, že Sára je tá pravá. Púť do Ríma počas jubilejného roku som obohatil o prekvapenie navyše. V Bazilike sv. Sebastiána som pokľakol a požiadal Sáru o ruku.',
     
     // Wedding Details
     'details.title': 'Informácie o svadbe',
@@ -125,9 +125,9 @@ const translations = {
     // About
     'about.title': 'Our Story',
     'about.meeting.title': 'How we met',
-    'about.meeting.text': 'They first caught sight of each other at a Christian event. At first, only from a distance, but gradually they kept running into each other more and more in places they didn’t expect. A shared conversation in a car in front of the Main Station turned into an invitation to a first date. Just a few weeks later, they were holding hands and beginning a shared adventure.',
+    'about.meeting.text': 'We first caught sight of each other at a Christian event. At first, only from a distance, but gradually we kept running into each other more and more in places we didn’t expect. A shared conversation in a car in front of the Main Station turned into an invitation to a first date. Just a few weeks later, we started holding hands and sharing adventures.',
     'about.engagement.title': 'The Engagement',
-    'about.engagement.text': 'After a year, Jozef knew that Sára was the one. He added an extra surprise to their pilgrimage to Rome during the Jubilee Year. In the Basilica of St. Sebastian, he knelt down and asked Sára to marry him.',
+    'about.engagement.text': 'A year later, we knew that we were right for each other. Jozef added an extra surprise to our pilgrimage to Rome during the Jubilee Year. In the Basilica of St. Sebastian, he knelt down and asked me to marry him.',
     
     // Wedding Details
     'details.title': 'Wedding Details',
