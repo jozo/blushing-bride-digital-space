@@ -27,9 +27,9 @@ const translations = {
     // About
     'about.title': 'Náš príbeh',
     'about.meeting.title': 'Ako sme sa spoznali',
-    'about.meeting.text': 'Prvýkrát sme sa zahliadli na jednej kresťanskej akcii. Najskôr len zdiaľky, postupne sme však na seba narážali viac a viac na miestach, kde sme to ani nečakali. Spoločný rozhovor v aute pred Hlavnou stanicou prerástol do pozvania na prvé rande. Už o pár týždňov na to sme sa držali za ruky a začali naše spoločné dobrodružstvo.',
+    'about.meeting.text': 'Prvýkrát sme sa zahliadli na jednej kresťanskej akcii. Najskôr len zdiaľky, postupne sme však na seba narážali viac a viac na miestach, kde sme to ani nečakali. Spoločný rozhovor v aute pred Hlavnou stanicou prerástol do pozvania na prvé rande. Už o pár týždňov na to sme sa držali za ruky a začalo naše spoločné dobrodružstvo.',
     'about.engagement.title': 'Zásnuby',
-    'about.engagement.text': 'O rok neskôr som vedel, že Sára je tá pravá. Púť do Ríma počas jubilejného roku som obohatil o prekvapenie navyše. V Bazilike sv. Sebastiána som pokľakol a požiadal Sáru o ruku.',
+    'about.engagement.text': 'O rok neskôr sme už vedeli, že sme pre seba tí praví. Púť do Ríma počas jubilejného roku sme mali obohatenú o prekvapenie navyše. V Bazilike sv. Sebastiána Jožko pokľakol a požiadal Sáru o ruku.',
     
     // Wedding Details
     'details.title': 'Informácie o svadbe',
@@ -49,7 +49,7 @@ const translations = {
     
     // RSVP
     'rsvp.title': 'RSVP',
-    'rsvp.deadline': 'Prosím odpovedzte do 1. septembra 2025',
+    'rsvp.deadline': 'Prosím odpovedzte do 15. septembra 2025',
     'rsvp.name': 'Celé meno',
     'rsvp.email': 'Email',
     'rsvp.attendance': 'Zúčastníte sa?',
@@ -147,7 +147,7 @@ const translations = {
     
     // RSVP
     'rsvp.title': 'RSVP',
-    'rsvp.deadline': 'Please respond by May 1st, 2024',
+    'rsvp.deadline': 'Please respond by September 15th, 2025',
     'rsvp.name': 'Full Name',
     'rsvp.email': 'Email',
     'rsvp.attendance': 'Will you attend?',

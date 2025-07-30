@@ -22,8 +22,16 @@ const Footer = () => {
             <span className="text-cream-200">hi@jozo.io</span>
           </div>
           <div className="flex items-center justify-center space-x-2">
-            <Phone className="h-4 w-4 text-cream-300" />
-            <span className="text-cream-200">+421 908 659 451</span>
+            <div className="flex flex-col">
+              <div className="flex items-center space-x-2 mb-2">
+                <Phone className="h-4 w-4 text-cream-300" />
+                <span className="text-cream-200">+421 908 659 451</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Phone className="h-4 w-4 text-cream-300" />
+                <span className="text-cream-200">+421 949 803 040</span>
+              </div>
+            </div>
           </div>
         </div>
         
